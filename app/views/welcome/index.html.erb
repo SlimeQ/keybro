@@ -1,0 +1,77 @@
+<h1>tabbse</h1>
+<p>Pick a fret to start on.</p>
+
+<style>
+h1 {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+p {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+table {
+	font-family: "Lucida Console", Monaco, monospace;
+	/*font-size: 80%;*/
+	border-collapse: collapse; /* 'cellspacing' equivalent */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin:0;
+}
+td, tr {
+    padding:0;
+	margin:0;
+	white-space: nowrap;
+
+}
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : .6em;
+  margin-right: 0;
+  margin-left: 0;
+  padding   : 0;
+  font-size : 1em;
+  /*display : block;*/
+  /*opacity   : 0;*/
+}
+</style>
+
+<%= form_for :key do |f| %>
+  	<table cellspacing="0" cellpadding="0">
+	  	<%  6.times do |y| %>
+	  			<tr><td>
+	  	<%= 	"e| ||" if y == 0 %>
+	  	<%= 	"B| ||" if y == 1 %>
+	  	<%= 	"G| ||" if y == 2 %>
+	  	<%= 	"D| ||" if y == 3 %>
+	  	<%= 	"A| ||" if y == 4 %>
+	  	<%  	if y == 5 %>
+	 	D|<%=		radio_button_tag(:root, "0", checked = true) %>||
+		<%  	end %>
+	  			</td>
+	  	<%      23.times do |x| %>
+	  	<%          if y == 5 %>
+		<td>-<%=    	radio_button_tag(:root, "#{x+1}")%>-|</td>
+	  	<%          else %>
+			  	        <td>---|</td>
+		<%     	    end %>
+	  	<%      end %>
+	  			</tr>
+		<% 	end %>
+		<tr>
+		<%  23.times do |x| %>
+	  	<%      if [3, 5, 7, 9, 15, 17, 19, 21].include? x %>
+	  				<td>&nbsp;*  </td>
+	  	<%      elsif x == 12 %>
+			  	    <td>* * </td>
+		<%		else %>
+					<td></td>
+		<%     	end %>
+	  	<%  end %>
+	  	</tr>
+  	</table>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
