@@ -1,7 +1,9 @@
 class Key < ActiveRecord::Base
-  def initialize(data)
-    @fretboard = data
-    @interval = "I"
+  def after_initialize(params)
+    @scale = params[:scale]
+    @root = params[:root]
+    # @fretboard = data
+    # @interval = "I"
   end
   def shift_mode(numeral)
     # @fretboard.each { |e|
@@ -107,8 +109,10 @@ class Key < ActiveRecord::Base
     end
     puts "              *       *       *       *          * *          *       *       *       *"
   end
-  def self.build_from_scale(scale_str, starting_fret)
-    scale = scale_str.split("").map {|x| x.to_i}
+  def self.build_from_scale(params)
+
+    scale = params[:scale].split("").map {|x| x.to_i}
+    starting_fret = params[:root].to_i
 
     # fill in master string
     i = 0
@@ -139,6 +143,6 @@ class Key < ActiveRecord::Base
     master.each {|x| print x}
     print "\n"
 
-    return Fretboard.new([master[26, 24], master[21, 24], master[17,24], master[12,24], master[7,24], master[0,24]])
+    return Key.new([master[26, 24], master[21, 24], master[17,24], master[12,24], master[7,24], master[0,24]])
   end
 end

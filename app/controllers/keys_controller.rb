@@ -2,8 +2,14 @@ class KeysController < ApplicationController
   def new
   end
   def create
-    @key = Key.build_from_scale(key_params)
-    @key.save
+    begin
+      @key = Key.new(key_params)
+    rescue ArgumentError
+      # deal with the error here
+      puts ArgumentError
+    end
+    #@key = Key.build_from_scale(key_params)
+    # @key.save
     redirect_to @key
   end
   def show
@@ -11,6 +17,6 @@ class KeysController < ApplicationController
   end
   private
     def key_params
-      params.require(:key).permit(:scale), params.require(:key).permit(:scale):root)
+      params.require(:key).permit(:scale, :root)
     end
 end
