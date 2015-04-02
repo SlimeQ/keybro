@@ -4,6 +4,16 @@
 </p>
  
 <p>
-  <strong>root:</strong>
+  <strong>Root:</strong>
   <%= @key.root %>
+</p>
+
+<p>
+  <strong>Interval:</strong> <br>
+  <textarea>
+  <% x = @key.fretboard %>
+  e|<%= "#{x[0]}" %>
+  <% end %>
+  </textarea>
+  
 </p>

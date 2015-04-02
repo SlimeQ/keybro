@@ -4561,3 +4561,3283 @@ AbstractController::ActionNotFound (The action 'index' could not be found for Ke
 
 
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 18:26:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (88.5ms)
+Completed 200 OK in 851ms (Views: 763.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 18:26:31 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 18:26:31 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 18:26:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 18:26:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 18:26:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 18:26:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 18:26:32 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 18:26:32 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 18:26:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 18:26:32 -0500
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-02-25 18:26:38 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (135.0ms)
+Completed 200 OK in 365ms (Views: 365.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 18:28:46 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+Redirected to http://localhost:3000/keys
+Completed 302 Found in 68ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/keys" for 127.0.0.1 at 2015-02-25 18:28:46 -0500
+
+AbstractController::ActionNotFound (The action 'index' could not be found for KeysController):
+  actionpack (4.1.8) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.5ms)
+
+
+Started GET "/keys" for 127.0.0.1 at 2015-02-25 18:43:31 -0500
+Processing by KeysController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+ActionView::MissingTemplate (Missing template keys/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Quincy/Documents/keybro/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  C:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (2.5ms)
+
+
+Started GET "/keys" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+Processing by KeysController#index as HTML
+  Rendered keys/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 250ms (Views: 247.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 18:53:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 18:53:58 -0500
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 320ms (Views: 317.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:02 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 18:54:04 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+Redirected to http://localhost:3000/keys
+Completed 302 Found in 55ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/keys" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+Processing by KeysController#index as HTML
+  Rendered keys/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 270ms (Views: 267.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 18:54:05 -0500
+
+
+Started GET "/keys" for 127.0.0.1 at 2015-02-25 18:54:57 -0500
+Processing by KeysController#index as HTML
+  Rendered keys/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `scale' for nil:NilClass):
+    1: <p>
+    2:   <strong>Scale:</strong>
+    3:   <%= @key.scale %>
+    4: </p>
+    5:  
+    6: <p>
+  app/views/keys/index.html.erb:3:in `_app_views_keys_index_html_erb__511085506_48137688'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.5ms)
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-02-25 19:12:45 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 228ms (Views: 225.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+
+
+Started GET "/keys/show" for 127.0.0.1 at 2015-02-25 19:12:46 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mKey Load (37.5ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 53ms
+
+ActiveRecord::RecordNotFound (Couldn't find Key with 'id'=show):
+  app/controllers/keys_controller.rb:18:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (122.5ms)
+
+
+Started GET "/keys/show/1" for 127.0.0.1 at 2015-02-25 19:12:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/keys/show/1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (180.0ms)
+
+
+Started GET "/keys/show/0" for 127.0.0.1 at 2015-02-25 19:13:10 -0500
+
+ActionController::RoutingError (No route matches [GET] "/keys/show/0"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (147.5ms)
+
+
+Started GET "/keys/show" for 127.0.0.1 at 2015-02-25 19:13:16 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 10ms
+
+ActiveRecord::RecordNotFound (Couldn't find Key with 'id'=show):
+  app/controllers/keys_controller.rb:18:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (127.5ms)
+
+
+Started GET "/keys/show/id=1" for 127.0.0.1 at 2015-02-25 19:13:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/keys/show/id=1"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.5ms)
+
+
+Started GET "/keys/show?id=1" for 127.0.0.1 at 2015-02-25 19:13:34 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Key with 'id'=show):
+  app/controllers/keys_controller.rb:18:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (125.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 268ms (Views: 252.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:25 -0500
+
+
+Started GET "/keys/2" for 127.0.0.1 at 2015-02-25 19:14:35 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mKey Load (2.5ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Key with 'id'=2):
+  app/controllers/keys_controller.rb:18:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (137.5ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 280ms (Views: 270.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:14:44 -0500
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-02-25 19:17:24 -0500
+
+SyntaxError (C:/Users/Quincy/Documents/keybro/app/controllers/keys_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/keys_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (107.5ms)
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 243ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:18:11 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 19:18:14 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+Completed 500 Internal Server Error in 135ms
+
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  app/models/key.rb:146:in `build_from_scale'
+  app/controllers/keys_controller.rb:8:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (125.0ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 19:22:28 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-02-26 00:22:29.125286"], ["root", 0], ["scale", "2212221"], ["updated_at", "2015-02-26 00:22:29.125286"]]
+  [1m[35m (147.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/2
+Completed 302 Found in 273ms (ActiveRecord: 152.5ms)
+
+
+Started GET "/keys/2" for 127.0.0.1 at 2015-02-25 19:22:29 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 243ms (Views: 230.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:29 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:30 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:30 -0500
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-02-25 19:22:37 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 310ms (Views: 310.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:37 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:38 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:38 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:38 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 19:22:42 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"5", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-02-26 00:22:42.589936"], ["root", 5], ["scale", "2212221"], ["updated_at", "2015-02-26 00:22:42.589936"]]
+  [1m[35m (85.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/3
+Completed 302 Found in 113ms (ActiveRecord: 90.0ms)
+
+
+Started GET "/keys/3" for 127.0.0.1 at 2015-02-25 19:22:42 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mKey Load (2.5ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 263ms (Views: 255.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:22:43 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 19:28:37 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"12", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-02-26 00:28:37.967527"], ["root", 12], ["scale", "2212221"], ["updated_at", "2015-02-26 00:28:37.967527"]]
+  [1m[35m (97.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/4
+Completed 302 Found in 148ms (ActiveRecord: 102.5ms)
+
+
+Started GET "/keys/4" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKey Load (2.5ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 235ms (Views: 227.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:28:38 -0500
+
+
+Started GET "/keys/4" for 127.0.0.1 at 2015-02-25 19:31:20 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered keys/show.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined method `interval' for #<Key:0x625e018>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.interval %>
+    14: </p>
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb__1014583329_51569004'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.5ms)
+
+
+Started GET "/keys/4" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 223ms (Views: 192.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:44 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 19:54:53 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"12", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-02-26 00:54:53.101921"], ["root", 12], ["scale", "2212221"], ["updated_at", "2015-02-26 00:54:53.101921"]]
+  [1m[35m (90.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/5
+Completed 302 Found in 118ms (ActiveRecord: 90.0ms)
+
+
+Started GET "/keys/5" for 127.0.0.1 at 2015-02-25 19:54:53 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 255ms (Views: 247.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:54:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:54:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:54:53 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:54:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:53 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:54 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:54:54 -0500
+
+
+Started GET "/keys/5" for 127.0.0.1 at 2015-02-25 19:55:17 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 293ms (Views: 265.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:18 -0500
+
+
+Started GET "/keys/5" for 127.0.0.1 at 2015-02-25 19:55:20 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 210ms (Views: 202.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:21 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"12", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-02-26 00:55:26.114566"], ["root", 12], ["scale", "2212221"], ["updated_at", "2015-02-26 00:55:26.114566"]]
+  [1m[35m (80.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/6
+Completed 302 Found in 108ms (ActiveRecord: 80.0ms)
+
+
+Started GET "/keys/6" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mKey Load (2.5ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 253ms (Views: 245.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:55:26 -0500
+
+
+Started GET "/keys/6" for 127.0.0.1 at 2015-02-25 19:56:02 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mKey Load (2.5ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 250ms (Views: 220.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:03 -0500
+
+
+Started GET "/keys/6" for 127.0.0.1 at 2015-02-25 19:56:29 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mKey Load (2.5ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 269ms (Views: 238.5ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:56:30 -0500
+
+
+Started GET "/keys/6" for 127.0.0.1 at 2015-02-25 19:59:08 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 268ms (Views: 235.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:09 -0500
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-02-25 19:59:22 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 245ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:23 -0500
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-02-25 19:59:26 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 235ms (Views: 225.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:27 -0500
+
+
+Started GET "/keys/6" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mKey Load (2.5ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 250ms (Views: 240.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:52 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 19:59:56 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"7", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-02-26 00:59:56.878338"], ["root", 7], ["scale", "2212221"], ["updated_at", "2015-02-26 00:59:56.878338"]]
+  [1m[35m (92.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/7
+Completed 302 Found in 130ms (ActiveRecord: 92.5ms)
+
+
+Started GET "/keys/7" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 228ms (Views: 217.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 19:59:57 -0500
+
+
+Started GET "/keys/7" for 127.0.0.1 at 2015-02-25 20:00:24 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 270ms (Views: 237.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:25 -0500
+
+
+Started GET "/keys/7" for 127.0.0.1 at 2015-02-25 20:00:40 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mKey Load (2.5ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 270ms (Views: 240.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:41 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"7", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (10.0ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-02-26 01:00:46.257009"], ["root", 7], ["scale", "2212221"], ["updated_at", "2015-02-26 01:00:46.257009"]]
+  [1m[35m (90.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/8
+Completed 302 Found in 110ms (ActiveRecord: 100.0ms)
+
+
+Started GET "/keys/8" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 228ms (Views: 217.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 20:00:47 -0500
+
+
+Started GET "/keys/8" for 127.0.0.1 at 2015-02-25 20:01:35 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 243ms (Views: 212.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:36 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-02-25 20:01:39 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"7", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-02-26 01:01:39.951160"], ["root", 7], ["scale", "2212221"], ["updated_at", "2015-02-26 01:01:39.951160"]]
+  [1m[36m (92.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/keys/9
+Completed 302 Found in 113ms (ActiveRecord: 92.5ms)
+
+
+Started GET "/keys/9" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 255ms (Views: 245.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 20:01:40 -0500
+
+
+Started GET "/keys/9" for 127.0.0.1 at 2015-02-25 20:06:25 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered keys/show.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (undefined local variable or method `params' for #<Key:0x3b6c2b0>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb__1014583329_30494532'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.5ms)
+
+
+Started GET "/keys/9" for 127.0.0.1 at 2015-02-25 20:07:07 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `each' for "2212221":String):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:18:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb__1014583329_30494532'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.0ms)
+
+
+Started GET "/keys/9" for 127.0.0.1 at 2015-02-25 20:07:55 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1)):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:8:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb__1014583329_30494532'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.0ms)
+
+
+Started GET "/keys/9" for 127.0.0.1 at 2015-02-25 20:08:37 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb__1014583329_30494532'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.0ms)
+
+
+Started GET "/keys/9" for 127.0.0.1 at 2015-02-25 20:08:54 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mKey Load (2.5ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb__1014583329_30494532'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.0ms)
+
+
+Started GET "/keys/9" for 127.0.0.1 at 2015-02-25 20:08:58 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb__1014583329_30494532'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 18:23:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (222.5ms)
+Completed 200 OK in 933ms (Views: 865.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 18:23:29 -0400
+
+
+Started POST "/welcome/index" for 127.0.0.1 at 2015-03-18 18:23:33 -0400
+
+ActionController::RoutingError (No route matches [POST] "/welcome/index"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (107.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (235.0ms)
+
+
+Started POST "/welcome/index" for 127.0.0.1 at 2015-03-18 18:23:54 -0400
+
+ActionController::RoutingError (No route matches [POST] "/welcome/index"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.5ms)
+
+
+Started GET "/keys" for 127.0.0.1 at 2015-03-18 18:24:03 -0400
+Processing by KeysController#index as HTML
+  Rendered keys/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 209ms (Views: 208.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-03-18 18:24:10 -0400
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 309ms (Views: 308.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-03-18 18:24:13 -0400
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (2.5ms)[0m  begin transaction
+  [1m[36mSQL (12.5ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-03-18 22:24:13.228454"], ["root", 0], ["scale", "2212221"], ["updated_at", "2015-03-18 22:24:13.228454"]]
+  [1m[35m (100.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/10
+Completed 302 Found in 240ms (ActiveRecord: 115.0ms)
+
+
+Started GET "/keys/10" for 127.0.0.1 at 2015-03-18 18:24:13 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered keys/show.html.erb within layouts/application (40.0ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___1057260055_51083808'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 18:28:14 -0400
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 210ms (Views: 207.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-03-18 18:28:17 -0400
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-03-18 22:28:17.906360"], ["root", 0], ["scale", "2212221"], ["updated_at", "2015-03-18 22:28:17.906360"]]
+  [1m[35m (95.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/11
+Completed 302 Found in 141ms (ActiveRecord: 100.0ms)
+
+
+Started GET "/keys/11" for 127.0.0.1 at 2015-03-18 18:28:18 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___1057260055_51083808'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.5ms)
+
+
+Started GET "/keys/11" for 127.0.0.1 at 2015-03-18 18:32:54 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mKey Load (2.5ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___1057260055_51083808'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.5ms)
+
+
+Started GET "/keys/11" for 127.0.0.1 at 2015-03-18 18:32:56 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered keys/show.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___1057260055_51083808'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.5ms)
+
+
+Started GET "/keys/11" for 127.0.0.1 at 2015-03-18 18:32:59 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered keys/show.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___1057260055_51083808'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.5ms)
+
+
+Started GET "/keys/list" for 127.0.0.1 at 2015-03-18 19:13:21 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"list"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 23ms
+
+ActiveRecord::RecordNotFound (Couldn't find Key with 'id'=list):
+  app/controllers/keys_controller.rb:13:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (95.0ms)
+
+
+Started GET "/keys" for 127.0.0.1 at 2015-03-18 19:13:34 -0400
+Processing by KeysController#index as HTML
+  Rendered keys/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 201ms (Views: 201.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 19:13:35 -0400
+
+
+Started GET "/keys" for 127.0.0.1 at 2015-03-18 19:16:41 -0400
+Processing by KeysController#index as HTML
+  Rendered keys/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 183ms (Views: 182.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 19:16:41 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 19:16:46 -0400
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 204ms (Views: 201.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 19:16:46 -0400
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-03-18 19:16:48 -0400
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-03-18 23:16:48.997470"], ["root", 0], ["scale", "2212221"], ["updated_at", "2015-03-18 23:16:48.997470"]]
+  [1m[35m (207.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/12
+Completed 302 Found in 253ms (ActiveRecord: 210.0ms)
+
+
+Started GET "/keys/12" for 127.0.0.1 at 2015-03-18 19:16:49 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered keys/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___1057260055_51083808'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 18:40:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (252.0ms)
+Completed 200 OK in 1095ms (Views: 1012.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 18:41:02 -0400
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-04-01 18:42:55 -0400
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-04-01 22:42:55.765848"], ["root", 0], ["scale", "2212221"], ["updated_at", "2015-04-01 22:42:55.765848"]]
+  [1m[35m (127.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/keys/13
+Completed 302 Found in 235ms (ActiveRecord: 133.0ms)
+
+
+Started GET "/keys/13" for 127.0.0.1 at 2015-04-01 18:42:55 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered keys/show.html.erb within layouts/application (33.0ms)
+Completed 500 Internal Server Error in 79ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.0ms)
+
+
+Started GET "/keys/13" for 127.0.0.1 at 2015-04-01 18:50:38 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.0ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-04-01 18:50:42 -0400
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-04-01 22:50:42.531545"], ["root", 0], ["scale", "2212221"], ["updated_at", "2015-04-01 22:50:42.531545"]]
+  [1m[36m (77.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/keys/14
+Completed 302 Found in 98ms (ActiveRecord: 79.0ms)
+
+
+Started GET "/keys/14" for 127.0.0.1 at 2015-04-01 18:50:42 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered keys/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.0ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-04-01 18:51:52 -0400
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-04-01 22:51:53.033577"], ["root", 0], ["scale", "2212221"], ["updated_at", "2015-04-01 22:51:53.033577"]]
+  [1m[36m (165.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/keys/15
+Completed 302 Found in 208ms (ActiveRecord: 169.0ms)
+
+
+Started GET "/keys/15" for 127.0.0.1 at 2015-04-01 18:51:53 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 15]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (private method `print' called for #<Key:0x65268c0>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.0ms)
+
+
+Started GET "/keys/15" for 127.0.0.1 at 2015-04-01 19:00:54 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 15]]
+  Rendered keys/show.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (private method `print' called for #<Key:0x61ae230>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:01:02 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (private method `print' called for #<Key:0x5f86320>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:01:26 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (private method `print' called for #<Key:0x5bd9bf8>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:01:28 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (private method `print' called for #<Key:0x59fbb90>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:01:51 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (private method `print' called for #<Key:0x3bf9910>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:01:54 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (private method `print' called for #<Key:0x665c760>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:02:26 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:02:31 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.0ms)
+
+
+Started GET "/keys/2" for 127.0.0.1 at 2015-04-01 19:03:09 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered keys/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:03:23 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:04:25 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.0ms)
+
+
+Started GET "/keys/1" for 127.0.0.1 at 2015-04-01 19:04:28 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.0ms)
+
+
+Started GET "/keys/" for 127.0.0.1 at 2015-04-01 19:06:04 -0400
+Processing by KeysController#index as HTML
+  Rendered keys/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 199ms (Views: 197.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2015-04-01 19:06:10 -0400
+Processing by KeysController#new as HTML
+  Rendered keys/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 186ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-04-01 19:06:12 -0400
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-04-01 23:06:12.464734"], ["root", 0], ["scale", "2212221"], ["updated_at", "2015-04-01 23:06:12.464734"]]
+  [1m[36m (117.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/keys/16
+Completed 302 Found in 146ms (ActiveRecord: 119.0ms)
+
+
+Started GET "/keys/16" for 127.0.0.1 at 2015-04-01 19:06:12 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered keys/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_49085592'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+
+
+Started GET "/keys/16" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 16]]
+  Rendered keys/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 210ms (Views: 201.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 19:09:21 -0400
+
+
+Started GET "/keys/16" for 127.0.0.1 at 2015-04-01 19:11:28 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered keys/show.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_50131272'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2015-04-01 19:20:19 -0400
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfR6wtFXHuyBqCEXvloGlciqC4efQq8BW3nfc0pivSQ=", "key"=>{"root"=>"0", "scale"=>"2212221"}, "commit"=>"Save Key"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "keys" ("created_at", "root", "scale", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-04-01 23:20:19.065157"], ["root", 0], ["scale", "2212221"], ["updated_at", "2015-04-01 23:20:19.065157"]]
+  [1m[36m (72.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/keys/17
+Completed 302 Found in 94ms (ActiveRecord: 74.0ms)
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:20:19 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_50131272'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.0ms)
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:21:02 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 230ms (Views: 202.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:03 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 189ms (Views: 182.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:28 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:21:44 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (0.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 232ms (Views: 206.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:44 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:44 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:44 -0400
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 19:21:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:45 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:45 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 19:21:45 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:22:54 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 220ms (Views: 197.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 19:22:54 -0400
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 19:22:54 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 19:22:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 19:22:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 19:22:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 19:22:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 19:22:54 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 19:22:54 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 19:22:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 19:22:55 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:23:17 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 219ms (Views: 193.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 19:23:18 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:24:09 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 213ms (Views: 187.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 19:24:09 -0400
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 19:24:09 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 19:24:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 19:24:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 19:24:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 19:24:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 19:24:09 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 19:24:09 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 19:24:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 19:24:10 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 229ms (Views: 204.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 19:25:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 19:25:52 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:26:02 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:9:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_47222688'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.0ms)
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:26:57 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `each' for "2212221":String):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:18:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_47222688'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:28:32 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (C:/Users/Quincy/Documents/keybro/app/models/key.rb:18: syntax error, unexpected '.', expecting '|'
+    scale.split("").each {|step.to_i|
+                                ^
+C:/Users/Quincy/Documents/keybro/app/models/key.rb:29: syntax error, unexpected '}', expecting keyword_end
+    }
+     ^):
+  app/models/key.rb:18: syntax error, unexpected '.', expecting '|'
+  app/models/key.rb:29: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/keys_controller.rb:13:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (95.0ms)
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:29:47 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `to_i' for ["2", "2", "1", "2", "2", "2", "1"]:Array):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print %>
+    14: </p>
+  app/models/key.rb:18:in `print'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_47222688'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 226ms (Views: 198.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 19:58:38 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 20:11:44 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (wrong number of arguments (3 for 1)):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print_chord(1,3,5) %>
+    14: </p>
+  app/models/key.rb:70:in `print_chord'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_43187724'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.0ms)
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 20:12:03 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 211ms (Views: 204.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 20:12:04 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 20:14:23 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (undefined local variable or method `output' for #<Key:0x5d9d668>):
+    10: 
+    11: <p>
+    12:   <strong>Interval:</strong>
+    13:   <%= @key.print_chord([1,3,5]) %>
+    14: </p>
+  app/models/key.rb:110:in `print_chord'
+  app/views/keys/show.html.erb:13:in `_app_views_keys_show_html_erb___739645110_37002072'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 20:15:23 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 225ms (Views: 198.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 20:15:24 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 20:16:13 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 190ms (Views: 183.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 20:16:14 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 20:17:53 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 209ms (Views: 202.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 20:17:53 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 20:17:54 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 20:17:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 20:17:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 20:17:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 20:17:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 20:17:54 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 20:17:54 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 20:17:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 20:17:54 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 20:18:12 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (0.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 189ms (Views: 184.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 20:18:12 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 20:18:12 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 20:18:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 20:18:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 20:18:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 20:18:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 20:18:13 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 20:18:13 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 20:18:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 20:18:13 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 20:19:21 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mKey Load (1.0ms)[0m  [1mSELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 218ms (Views: 210.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 20:19:22 -0400
+
+
+Started GET "/keys/17" for 127.0.0.1 at 2015-04-01 20:20:20 -0400
+Processing by KeysController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mKey Load (1.0ms)[0m  SELECT  "keys".* FROM "keys"  WHERE "keys"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered keys/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 18ms
+
+SyntaxError (C:/Users/Quincy/Documents/keybro/app/views/keys/show.html.erb:21: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/keys/show.html.erb:21: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (95.0ms)
