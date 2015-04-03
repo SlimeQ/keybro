@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: keybro_production
+  database: dalc0jvtm4e0ir
+  user: qdqbyethwvlgvl
+  password: 7HsW9-NysPHUVB6yVro2JgxwJF
