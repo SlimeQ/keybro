@@ -1,24 +1,30 @@
 <p>
-  <strong>Scale:</strong>
-  <%= @key.scale %>
+  <strong>Steps:</strong>
+  <%= @key.steps %>
 </p>
- 
 <p>
   <strong>Root:</strong>
   <%= @key.root %>
 </p>
+<p>
+  <strong>Interval:</strong>
+  <%= @key.interval %>
+</p>
+<p>
+  <strong>Tuning:</strong>
+  <%= @key.tuning %>
+</p>
 
 <p>
-  <strong>Interval:</strong> <br>
-  <textarea>
-  <% x = @key.fretboard %>
-  e|<%= x[0] %><br>
-  B|<%= x[1] %><br>
-  G|<%= x[2] %><br>
-  D|<%= x[3] %><br>
-  A|<%= x[4] %><br>
-  D|<%= x[5] %><br>
-  <% end %>
-  </textarea>
+  <strong>Diagram</strong> <br>
+  <textarea class="key-box" rows="7" cols="100" readonly><% x = @key.fretboard %><% (0..5).each do |i| %>
+<%= @key.tuning[5-i] + x[i].each_with_index.map {|f,i| i == 0? (f == 0? "| |" : "|#{f}|") : (f == 0? "---" : " #{f} ")} * "|" %>|<% end %>
+              *       *       *       *          * *          *       *       *       *           </textarea>
   
 </p>
+
+<script>
+$(document).ready(function(){
+    $('textarea').autosize();   
+});
+</script>

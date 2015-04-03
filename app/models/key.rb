@@ -3,7 +3,7 @@ class Key < ActiveRecord::Base
   #   @scale = params[:scale]
   #   @root = params[:root]
   #   # @fretboard = data
-  #   # @interval = "I"
+  #   # @note = "I"
   # end
   def fretboard
     # steps = scale.split("").map {|x| x.to_i}
@@ -11,16 +11,16 @@ class Key < ActiveRecord::Base
 
     # fill in master string
     i = 0
-    interval = 1
+    note = 1
     master = []
-    master.push(interval)
-    interval += 1
-    scale.split("").each {|step|
+    master.push(note)
+    note += 1
+    steps.split("").each {|step|
       x = step.to_i
       while x > 0 do
         if x == 1
-          master.push(interval)
-          interval += 1
+          master.push(note)
+          note += 1
         else
           master.push(0)
         end
@@ -35,7 +35,11 @@ class Key < ActiveRecord::Base
 
     # add stuff to beginning
     master = str[-root.to_i..-1] + master
-    return [master[26, 24], master[21, 24], master[17,24], master[12,24], master[7,24], master[0,24]]
+    if tuning == "DADGBe"
+      return [master[26, 24], master[21, 24], master[17,24], master[12,24], master[7,24], master[0,24]]
+    else
+      return [master[24, 24], master[19, 24], master[15,24], master[10,24], master[5,24], master[0,24]]
+    end
   end
   # def shift_mode(numeral)
   #   # @fretboard.each { |e|
@@ -149,16 +153,16 @@ class Key < ActiveRecord::Base
 
   #   # fill in master string
   #   i = 0
-  #   interval = 1
+  #   note = 1
   #   master = []
-  #   master.push(interval)
-  #   interval += 1
+  #   master.push(note)
+  #   note += 1
   #   scale.each {|step|
   #     x = step
   #     while x > 0 do
   #       if x == 1
-  #         master.push(interval)
-  #         interval += 1
+  #         master.push(note)
+  #         note += 1
   #       else
   #         master.push(0)
   #       end

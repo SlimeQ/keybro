@@ -14,6 +14,6 @@ class KeysController < ApplicationController
   end
   private
     def key_params
-      params.require(:key).permit(:scale, :root)
+      params.require(:key).permit(:steps, :root, :tuning, :interval)
     end
 end
