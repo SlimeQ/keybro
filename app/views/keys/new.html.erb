@@ -40,6 +40,8 @@ input[type=radio   ]:not(old){
 </style>
 
 <%= form_for :key, url: keys_path do |f| %>
+	<%= f.label :"Steps" %>
+	<%= f.text_field :steps, :value => "2212221" %>
   	<table cellspacing="0" cellpadding="0">
 	  	<%  6.times do |y| %>
 	  			<tr><td>
@@ -73,7 +75,6 @@ input[type=radio   ]:not(old){
 	  	<%  end %>
 	  	</tr>
   	</table>
- <%= f.hidden_field :steps, :value => "2212221" %>
  <%= f.hidden_field :interval, :value => "I" %>
  <%= f.hidden_field :tuning, :value => "DADGBe" %>
   <p>
