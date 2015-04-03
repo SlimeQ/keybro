@@ -11,7 +11,9 @@ default: &default
 
 development:
   <<: *default
-  database: keybro_dev
+  database: dalc0jvtm4e0ir
+  user: qdqbyethwvlgvl
+  password: 7HsW9-NysPHUVB6yVro2JgxwJF
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
